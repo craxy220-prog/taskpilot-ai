@@ -43,7 +43,7 @@ export default function Sidebar({ currentView, onNavigate, onSearch, open, onTog
 
       <aside
         className={cn(
-          "fixed lg:static inset-y-0 left-0 z-30 w-[260px] bg-card/80 backdrop-blur-2xl border-r border-border/50",
+          "fixed lg:static inset-y-0 left-0 z-30 w-[260px] bg-card/95 border-r border-border/50",
           "flex flex-col transition-all duration-300 ease-out",
           open ? "translate-x-0" : "-translate-x-full lg:translate-x-0",
         )}

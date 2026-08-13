@@ -143,7 +143,7 @@ export default function GlobalSearch({ open, onClose, onSelectDocument, onNaviga
 
   return (
     <div className="fixed inset-0 z-50 flex items-start justify-center pt-[15vh]">
-      <div className="fixed inset-0 bg-black/60 backdrop-blur-sm" onClick={onClose} />
+      <div className="fixed inset-0 bg-black/60" onClick={onClose} />
       <div className="relative w-full max-w-lg bg-card border border-border/50 rounded-2xl shadow-2xl shadow-black/30 overflow-hidden animate-scale-in">
         {/* Search input */}
         <div className="flex items-center gap-3 px-4 py-3 border-b border-border/30">

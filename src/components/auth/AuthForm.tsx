@@ -42,7 +42,7 @@ export default function AuthForm() {
         </div>
 
         {/* Form */}
-        <div className="bg-card/80 backdrop-blur-xl border border-white/5 rounded-2xl p-6 shadow-lg">
+        <div className="bg-card/95 border border-border/40 rounded-2xl p-6 shadow-lg">
           <h2 className="text-lg font-semibold text-foreground mb-1">
             {isLogin ? 'Welcome back' : 'Create account'}
           </h2>

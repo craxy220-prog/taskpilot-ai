@@ -55,7 +55,7 @@ export default function TaskForm({ onSubmit, onClose, initial }: TaskFormProps) 
 
   return (
     <div className="fixed inset-0 z-40 flex items-center justify-center p-4">
-      <div className="fixed inset-0 bg-black/60 backdrop-blur-sm" onClick={onClose} />
+      <div className="fixed inset-0 bg-black/60" onClick={onClose} />
       <form onSubmit={handleSubmit} className="relative w-full max-w-lg bg-card border border-border/50 rounded-2xl shadow-2xl shadow-black/30 overflow-hidden animate-scale-in">
         <div className="flex items-center justify-between px-5 py-4 border-b border-border/30">
           <h2 className="text-sm font-semibold text-foreground">{initial ? 'Edit Task' : 'New Task'}</h2>

@@ -42,10 +42,15 @@ export default function DocumentUpload() {
     },
   });
 
-  // Clean up done files after 5 seconds
+  // Clean up done files after 5 seconds (guard against infinite re-render loops)
   useEffect(() => {
+    if (!files.some(f => f.status === 'done')) return;
     const timer = setTimeout(() => {
-      setFiles(prev => prev.filter(f => f.status !== 'done'));
+      setFiles(prev => {
+        const next = prev.filter(f => f.status !== 'done');
+        // Only update state if something actually changed
+        return next.length === prev.length ? prev : next;
+      });
     }, 5000);
     return () => clearTimeout(timer);
   }, [files]);

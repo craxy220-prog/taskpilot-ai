@@ -16,7 +16,7 @@ interface StatCardProps {
 
 function StatCard({ icon: Icon, label, value, sub, color }: StatCardProps) {
   return (
-    <div className="bg-card/50 backdrop-blur-xl border border-white/5 rounded-2xl p-4 transition-all duration-200 hover:bg-card/70 hover:border-border/40 group">
+    <div className="bg-card/60 border border-border/40 rounded-2xl p-4 transition-all duration-200 hover:bg-card/80 hover:border-border/60 group">
       <div className="flex items-start justify-between">
         <div>
           <p className="text-xs text-foreground/40 font-medium uppercase tracking-wider">{label}</p>
@@ -110,7 +110,7 @@ export default function Dashboard() {
         {/* Left column */}
         <div className="space-y-6">
           {/* Today's tasks */}
-          <div className="bg-card/50 backdrop-blur-xl border border-white/5 rounded-2xl p-5">
+          <div className="bg-card/60 border border-border/40 rounded-2xl p-5">
             <div className="flex items-center justify-between mb-4">
               <h2 className="text-sm font-semibold text-foreground flex items-center gap-2">
                 <ListChecks className="w-4 h-4 text-accent" />
@@ -151,7 +151,7 @@ export default function Dashboard() {
           </div>
 
           {/* Quick actions */}
-          <div className="bg-card/50 backdrop-blur-xl border border-white/5 rounded-2xl p-5">
+          <div className="bg-card/60 border border-border/40 rounded-2xl p-5">
             <h2 className="text-sm font-semibold text-foreground mb-4 flex items-center gap-2">
               <Zap className="w-4 h-4 text-accent" />
               Quick Actions
@@ -178,7 +178,7 @@ export default function Dashboard() {
         {/* Right column */}
         <div className="space-y-6">
           {/* Recent documents */}
-          <div className="bg-card/50 backdrop-blur-xl border border-white/5 rounded-2xl p-5">
+          <div className="bg-card/60 border border-border/40 rounded-2xl p-5">
             <div className="flex items-center justify-between mb-4">
               <h2 className="text-sm font-semibold text-foreground flex items-center gap-2">
                 <FileText className="w-4 h-4 text-accent" />
@@ -222,7 +222,7 @@ export default function Dashboard() {
           </div>
 
           {/* Upcoming deadlines */}
-          <div className="bg-card/50 backdrop-blur-xl border border-white/5 rounded-2xl p-5">
+          <div className="bg-card/60 border border-border/40 rounded-2xl p-5">
             <div className="flex items-center justify-between mb-4">
               <h2 className="text-sm font-semibold text-foreground flex items-center gap-2">
                 <Clock className="w-4 h-4 text-accent" />
@@ -264,7 +264,7 @@ export default function Dashboard() {
           </div>
 
           {/* Recent AI activity */}
-          <div className="bg-card/50 backdrop-blur-xl border border-white/5 rounded-2xl p-5">
+          <div className="bg-card/60 border border-border/40 rounded-2xl p-5">
             <div className="flex items-center justify-between mb-4">
               <h2 className="text-sm font-semibold text-foreground flex items-center gap-2">
                 <Bot className="w-4 h-4 text-accent" />

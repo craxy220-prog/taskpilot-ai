@@ -106,7 +106,7 @@ export default function DocumentView({ document, summary, tasks }: DocumentViewP
             {summary ? (
               <div className="space-y-6">
                 {/* Summary */}
-                <div className="bg-card/30 border border-white/5 rounded-2xl p-5">
+                <div className="bg-card/30 border border-border/40 rounded-2xl p-5">
                   <h2 className="text-sm font-semibold text-foreground mb-3 flex items-center gap-2">
                     <Sparkles className="w-4 h-4 text-accent" />
                     AI Summary
@@ -118,7 +118,7 @@ export default function DocumentView({ document, summary, tasks }: DocumentViewP
 
                 {/* Key Points */}
                 {summary.key_points.length > 0 && (
-                  <div className="bg-card/30 border border-white/5 rounded-2xl p-5">
+                  <div className="bg-card/30 border border-border/40 rounded-2xl p-5">
                     <h2 className="text-sm font-semibold text-foreground mb-3">Key Points</h2>
                     <ul className="space-y-2">
                       {summary.key_points.map((point, i) => (
@@ -144,7 +144,7 @@ export default function DocumentView({ document, summary, tasks }: DocumentViewP
             {tasks.length > 0 ? (
               <div className="space-y-2">
                 {tasks.map(task => (
-                  <div key={task.id} className="bg-card/30 border border-white/5 rounded-xl p-4 flex items-start gap-3">
+                  <div key={task.id} className="bg-card/30 border border-border/40 rounded-xl p-4 flex items-start gap-3">
                     {task.status === 'completed' ? (
                       <CheckCircle2 className="w-4 h-4 text-emerald-400 mt-0.5 shrink-0" />
                     ) : (
